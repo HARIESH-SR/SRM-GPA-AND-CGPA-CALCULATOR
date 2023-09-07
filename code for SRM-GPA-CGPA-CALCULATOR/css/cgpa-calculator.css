@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #1a2b3c;
+    --secondary-color: #4a5b6c;
+    --input-background: #f7f9fa;
+    --border-color: #d4dce0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    max-height: 90vh; /* Reduce the max-height to leave some space for browser chrome */
+}
+
+label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--input-background);
+    font-size: 1rem;
+    color: var(--primary-color);
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 1rem 10px 0;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+#cgpa {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    label, input[type="number"], select, #cgpa {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

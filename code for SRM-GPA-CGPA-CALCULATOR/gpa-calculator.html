@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Details</title>
+    <link rel="stylesheet" href="css/gpa-calculator.css">
+</head>
+<style>
+    body {
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+</style>
+
+<body>
+    <div class="bg"></div>
+    <div class="container">
+        <label for="regulation">Select Regulation:</label>
+        <select id="regulation" onchange="updateCourses()">
+            <option value="2018">2018</option>
+            <option value="2021">2021</option>
+            <!-- Add other regulations if needed -->
+        </select>
+
+        <label for="course">Select Course:</label>
+        <select id="course" onchange="updateSemesters()"></select>
+
+        <label for="semester">Select Semester:</label>
+        <select id="semester"></select>
+
+        <button onclick="goToSubjectsPage()">Next</button>
+    </div>
+
+<footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                Developed by 
+                <a href="https://www.linkedin.com/in/sai23/" target="_blank">Sai Narayana</a>
+                and 
+                <a href="https://www.linkedin.com/in/hariesh-s-r/" target="_blank">Hariesh</a>
+            </div>
+        </div>
+    </footer>
+
+<style>
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0; /* Reduced height by adjusting padding */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .footer-text {
+            font-size: 16px;
+            flex: 1;
+            text-align: center;
+        }
+        .footer-text a {
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 0.3s;
+            color: #fff;
+            text-decoration: none; /* Removes underline from links */
+        }
+        .footer-text a:hover {
+            color: #b8b8b8;
+        }
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+        .social-icons a {
+            margin-left: 10px;
+            font-size: 20px;
+            color: #fff;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0077b5;
+        }
+        footer:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+
+    <script src="js/gpa-calculator.js"></script>
+</body>
+</html>
