@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://srmcgpa.netlify.app/</loc>
+        <lastmod>2023-09-09T15:23:52+01:00</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://srmcgpa.netlify.app/gpa-calculator</loc>
+        <lastmod>2023-09-09T15:23:52+01:00</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://srmcgpa.netlify.app/cgpa-calculator</loc>
+        <lastmod>2023-09-09T15:23:52+01:00</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://srmcgpa.netlify.app/about</loc>
+        <lastmod>2023-09-09T15:23:52+01:00</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://srmcgpa.netlify.app/contact</loc>
+        <lastmod>2023-09-09T15:23:52+01:00</lastmod>
+        <priority>1.0</priority>
+    </url>
+</urlset>

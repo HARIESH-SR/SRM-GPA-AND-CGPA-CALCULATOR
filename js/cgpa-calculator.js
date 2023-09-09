@@ -115,9 +115,14 @@ const regulations = {
     }
 }
 
-document.getElementById('regulation').addEventListener('change', function() {
+
+// Select the regulation and course elements
+const regulationSelect = document.getElementById('regulation');
+const courseSelect = document.getElementById('course');
+
+// Populate the course options when the regulation changes
+regulationSelect.addEventListener('change', function() {
     const selectedRegulation = this.value;
-    const courseSelect = document.getElementById('course');
     courseSelect.innerHTML = '';  // Clear previous options
     for (const course in regulations[selectedRegulation]) {
         const option = document.createElement('option');
@@ -126,7 +131,12 @@ document.getElementById('regulation').addEventListener('change', function() {
         courseSelect.appendChild(option);
     }
 });
-let semesterCount = 1; 
+
+// Manually trigger the change event to populate courses for the initial selected regulation
+regulationSelect.dispatchEvent(new Event('change'));
+
+let semesterCount = 1;
+
 function addSemester() {
     semesterCount++;
     if (semesterCount <= 8) {
@@ -139,6 +149,7 @@ function addSemester() {
         semesterDiv.appendChild(newInput);
     }
 }
+
 function removeSemester() {
     if (semesterCount > 1) {
         const semesterDiv = document.getElementById("additional-semesters");
@@ -146,11 +157,13 @@ function removeSemester() {
         semesterCount--;
     }
 }
+
 function calculateCGPA() {
     let weightedGPA = 0;
     let totalCredits = 0;
     const selectedRegulation = document.getElementById('regulation').value;
     const selectedCourse = document.getElementById('course').value;
+
     for (let i = 1; i <= semesterCount; i++) {
         const semesterGPA = parseFloat(document.getElementById(`semester${i}`).value);
         if (isNaN(semesterGPA)) {
@@ -161,10 +174,14 @@ function calculateCGPA() {
         weightedGPA += semesterGPA * semesterCredits;
         totalCredits += semesterCredits;
     }
-    const cgpa = (weightedGPA / totalCredits).toFixed(2); 
+
+    const cgpa = (weightedGPA / totalCredits).toFixed(2);
     const cgpaElement = document.getElementById("cgpa");
     cgpaElement.textContent = `${cgpa}`;
     // Make the CGPA visible
     cgpaElement.style.opacity = "1";
     cgpaElement.style.transform = "translateY(0)";
+
+    // Scroll to the CGPA results section
+    cgpaElement.scrollIntoView({ behavior: 'smooth' });
 }
