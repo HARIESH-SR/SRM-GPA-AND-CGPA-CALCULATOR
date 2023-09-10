@@ -1,0 +1,464 @@
+body, html {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Global Styles */
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(to right, #0077b6, #005e8d);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.header h1 {
+    font-size: 48px;
+    margin: 0;
+    
+}
+
+
+/* Main Content Styles */
+.main-content {
+    padding: 40px;
+    
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url("https://i.postimg.cc/xjb54zVz/mbg-1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* Features Section Styles */
+.features {
+    padding: 40px 0;
+}
+
+.features h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature-box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    flex: 1;
+    padding: 30px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.feature-box h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Call to Action Styles */
+.cta {
+    background: linear-gradient(to right, #0077b6, #005e8d);
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.cta h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.calculate-button {
+    padding: 15px 40px;
+    background-color: #32c75a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.calculate-button:hover {
+    background-color: #e77127;
+    color: #fff;
+    transform: scale(1.05);
+    
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    transition: transform 0.3s
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.testimonial p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.testimonial cite {
+    font-size: 18px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #0077b6, #005e8d);
+    color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.footer:hover {
+    background: linear-gradient(to right, #005e8d, #004c6d);
+}
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-weight: bold !important; */
+}
+body {
+  min-height: 100%;
+  background: #e3f2fd;
+  
+}
+#heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+.logo .menu-icon {
+  color: #333;
+  font-size: 24px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+.logo .logo-name {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+}
+nav .sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 260px;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+nav.open .sidebar {
+  left: 0;
+}
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+.sidebar-content .list {
+  list-style: none;
+}
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+#home:hover {
+background-color: #000;
+transition: transform .5s ease;
+position: relative;
+  line-height: 1;
+  transition: 0.3s ease all;
+  z-index: 2;
+}
+#gpa-calculator:hover{
+    background-color: #ea4c89;
+    transition: transform .5s ease;
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+    
+}
+#cgpa-calculator:hover{
+    transition: transform .5s ease;
+    background-color: #0057ff;
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+}
+#about:hover{
+    transition: transform .5s ease;
+    background-color: #32c766;
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+}
+#contact:hover{
+    transition: transform .5s ease;
+    background-color: #f48024;
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+}
+
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 20px;
+  color: #707070;
+}
+.nav-link .link {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
+}
+.lists .nav-link:hover{
+    transform: translate(0, -10%);
+}
+
+/* .lists .nav-link:hover .icon,
+.lists .nav-link:hover .link{
+    background-color:  #171515;
+} */
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #0072b1;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+}
+nav.open ~ .overlay {
+  opacity: 1;
+  left: 260px;
+  pointer-events: auto;
+}
+h3,h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+        width: 95%;
+    }
+
+    /* Header Styles */
+    .header h1 {
+        font-size: 32px;
+    }
+
+    /* Navigation Styles */
+    nav ul {
+        padding: 5px;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    nav a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        padding-top: 40px;
+    }
+    .closebtn {
+        font-size: 24px;
+    }
+
+    /* Main Content Styles */
+    .main-content {
+        padding: 20px;
+    }
+
+    /* Hero Section Styles */
+    .hero {
+        padding: 60px 0;
+    }
+    .hero h2 {
+        font-size: 32px;
+    }
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    /* Features Section Styles */
+    .features h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .feature-box-container {
+        flex-direction: column;
+    }
+    .feature-box {
+        margin: 10px 0;
+        padding: 20px;
+    }
+    .feature-box h3 {
+        font-size: 24px;
+    }
+
+    /* Call to Action Styles */
+    .cta h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .cta p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .calculate-button {
+        font-size: 17px;
+        padding: 5% 10% 5% 10%;
+        margin: 10px 7px 10px 7px;
+        background-color: #32c75a;
+    }
+
+    /* Testimonials Section Styles */
+    .testimonials h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .testimonial {
+        padding: 15px 20px;
+    }
+    .testimonial p {
+        font-size: 18px;
+    }
+    .testimonial cite {
+        font-size: 16px;
+    }
+
+    /* Footer Styles */
+    footer {
+        padding: 15px 0;
+    }
+}
