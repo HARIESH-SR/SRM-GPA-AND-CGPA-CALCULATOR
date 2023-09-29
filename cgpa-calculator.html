@@ -3,13 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CGPA Calculator</title>
+        
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SF23JKLTXE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-SF23JKLTXE');
+    </script>
+    
+    <title>SRM CGPA Calculator</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/cgpa-calculator.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 </head>
 <body>
-    <div class="container">
-        <h1>SRM CGPA Calculator</h1>
+    <nav>
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name" id="heading">SRM CGPA CALCULATOR</span>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name">Menu</span>
+          </div>
+  
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="index.html" class="nav-link" id="home">
+                  <i class="bx bx-home-alt icon"></i>
+                  <span class="link">Home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="gpa-calculator.html" class="nav-link" id="gpa-calculator">
+                    <i class='bx bxs-calculator icon'></i>
+                  <span class="link">GPA Calculator</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="cgpa-calculator.html" class="nav-link" id="cgpa-calculator">
+                    <i class='bx bx-calculator icon'></i>
+                  <span class="link">CGPA Calculator</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="about.html" class="nav-link" id="about">
+                    <i class='bx bx-group icon'></i>
+                  <span class="link">About</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="contact.html" class="nav-link" id="contact">
+                    <i class='bx bx-phone icon'></i>
+                  <span class="link">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="overlay"></section>
+      <script src="js/main.js"></script>
 
+    <div class="container">
+        <br><br>
         <div>
             <label for="regulation">Select Regulation:</label>
             <select id="regulation">
@@ -40,6 +107,7 @@
 
         <div class="result">
             <p>Your CGPA: <span id="cgpa">N/A</span></p>
+        <br><br>
         </div>
     </div>
 
@@ -64,6 +132,7 @@
             width: 100%;
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
             transition: all 0.3s;
+            border-radius: 0px;
         }
         .footer-content {
             display: flex;

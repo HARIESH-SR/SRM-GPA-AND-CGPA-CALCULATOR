@@ -1,17 +1,41 @@
 body {
     margin: 0;
-    font-family: 'Arial, sans-serif';
-    background: linear-gradient(45deg, #9abeab, #e1f0f0, #9abeab);
+    font-family:'Times New Roman', Times, serif;
+    background: #e3f2fd;
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     position: relative;
-    color: #333;
+    color: #070707;
     line-height: 1.8;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.profile{
+    text-decoration: none;
+    color: #000000;
 
+}
+.profile:hover{
+    color:maroon;
+    text-decoration: underline;
+}
+.profile:active{
+    color:red;
+    text-decoration: underline;
+}
+
+
+
+P{
+    /* max-width: 800px; */
+    /* margin: 20px auto; */
+    /* padding: 20px; */
+    background: #e3f2fd;
+    border-radius: 20px;
+    font-stretch: expanded;
+    
+}
 @keyframes gradientBG {
     0% {
         background-position: 0% 50%;
@@ -24,42 +48,11 @@ body {
     }
 }
 
-header {
-    background-color: rgba(52, 73, 94, 0.9);
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0px 4px 2px -2px gray;
-    backdrop-filter: blur(5px);
-}
-
-nav {
-    margin: 20px;
-    text-align: center;
-}
-
-nav a {
-    color: #ecf0f1;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s, color 0.3s;
-}
-
-nav a:hover {
-    border-bottom: 2px solid #3498db;
-    color: #fff;
-}
-
 main {
     margin-top: 80px;
     padding: 20px;
     width: 60%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background: #e3f2fd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
@@ -86,26 +79,37 @@ main {
     padding-bottom: 10px;
 }
 
-#about p {
+main #about p {
     text-align: justify;
     margin-bottom: 20px;
     font-size: 18px;
 }
 
-ul {
+main ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li {
+main ul li {
     background-color: #ecf0f1;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+    
+}
+main #what-makes li{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(219, 230, 228);
+    box-shadow: 2px 2px 2px rgb(188, 186, 186);
+    border-radius: 2
 }
 
-ul li:hover {
+main ul li:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
@@ -120,49 +124,240 @@ footer {
     bottom: 0;
     height: 130px; /* Adjust the height as needed */
     backdrop-filter: blur(5px);
+    /* z-index : 0; */
 }
 
 
-.contributor {
+footer .contributor {
     display: inline-block;
     margin: 0 20px;
 }
+footer .contributor:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
 
-.contributor h4 {
+footer .contributor h4 {
     margin-bottom: 10px;
 }
 
-.social-menu {
+footer .social-menu {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
 }
 
-.social-menu ul {
+footer .social-menu ul{
     display: flex;
+    padding:0;
 }
 
-.social-menu ul li {
-    margin: 0 10px;
+footer .social-menu ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 15px;
+    /* background-color: rgba(52, 73, 94, 0.9); */
 }
 
-.social-menu ul li a {
-    color: #ecf0f1;
-    font-size: 24px;
-    text-decoration: none;
-    background: linear-gradient(145deg, #3498db, #2ecc71);
-    padding: 12px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease-in-out;
+footer .social-menu ul li .fab{
+    font-size: 25px;
+    line-height: 40px;
+    transition: .3s;
+    color: #000000;
+    
+    
 }
 
-.social-menu ul li a:hover {
+footer .social-menu ul li .fab:hover{
     color: #fff;
-    background: linear-gradient(145deg, #2ecc71, #3498db);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    
 }
 
+footer .social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    /* box-shadow: 0 5px 4px rgba(0,0,0,.5); */
+}
+    
+footer .social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+footer .social-menu ul li:nth-child(1) a:hover{
+    background-color:  #171515;
+}
+footer .social-menu ul li:nth-child(2) a:hover{
+    background-color: #0072b1;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-weight: bold !important; */
+}
+body {
+  min-height: 100%;
+  background: #e3f2fd;
+  
+}
+nav #heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+nav{
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 70px !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  z-index:1;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px !important;
+}
+.logo .menu-icon {
+  color: #333;
+  font-size: 24px !important; 
+  margin-right: 14px !important;
+  cursor: pointer;
+}
+.logo .logo-name {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+}
+nav .sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 260px;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+nav.open .sidebar {
+  left: 0;
+}
+nav .sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+nav .sidebar-content .list {
+  list-style: none;
+}
+nav .list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+nav #home:hover {
+background-color: #000;
+transition: transform .5s ease;
+position: relative;
+  line-height: 1;
+  transition: 0.3s ease all;
+  z-index: 2;
+}
+nav #gpa-calculator:hover{
+    background-color: #ea4c89;
+    transition: transform .5s ease;
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+    
+}
+nav #cgpa-calculator:hover{
+    transition: transform .5s ease;
+    background-color: #0057ff;
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+}
+nav #about:hover{
+    transition: transform .5s ease;
+    background-color: #32c766;
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+}
+nav #contact:hover{
+    transition: transform .5s ease;
+    background-color: #f48024;
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+}
+
+nav .nav-link .icon {
+  margin-right: 14px;
+  font-size: 20px;
+  color: #707070;
+}
+nav .nav-link .link {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+}
+nav .lists .nav-link:hover .icon,
+nav .lists .nav-link:hover .link {
+  color: #fff;
+}
+nav .lists .nav-link:hover{
+    transform: translate(0, -10%);
+}
+
+/* .lists .nav-link:hover .icon,
+.lists .nav-link:hover .link{
+    background-color:  #171515;
+} */
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #0072b1;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+}
+nav.open ~ .overlay {
+  opacity: 1;
+  left: 260px;
+  pointer-events: auto;
+}
 @media only screen and (max-width: 600px) {
     main {
         width: 90%;
@@ -186,7 +381,25 @@ footer {
     .social-menu ul li {
         margin: 5px 0;
     }
+    .social-menu ul li a{
+        margin:5px;
+        color: #0057ff;
+    }
     body {
         margin: 0;
     }
+    footer .social-menu ul li:nth-child(1) a{
+        background-color:  #171515;
+    }
+    footer .social-menu ul li:nth-child(2) a{
+        background-color: #0072b1;
+    }
+    footer .social-menu ul li .fab{
+        font-size: 25px;
+        line-height: 40px;
+        transition: .3s;
+        color: #fff;
+    }
+      
+    
 }
