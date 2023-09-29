@@ -3,7 +3,7 @@
 ## Overview
 
 ### Website Link
-   https://srmcgpa.netlify.app/
+   [https://srmcgpa.netlify.app/](https://srmcgpa.netlify.app/).
 
 The SRM CGPA GPA Calculator is a specialized web application tailored for students at SRM Institute of Science and Technology (SRM IST), Trichy Campus. It simplifies academic performance tracking by allowing students to calculate their Grade Point Average (GPA) and Cumulative Grade Point Average (CGPA) conveniently, with the following features:
 
@@ -23,7 +23,7 @@ In the CGPA Calculator:
 
 ## Getting Started
 
-To use the SRM IST GPA & CGPA Calculator, simply[ visit the website at [https://srmcgpa.netlify.app/](https://srmcgpa.netlify.app/). ](https://srmcgpa.netlify.app/)
+To use the SRM IST GPA & CGPA Calculator, simply[ visit the website at [https://srmcgpa.netlify.app/](https://srmcgpa.netlify.app/).
 
 No login or registration is required.
 
