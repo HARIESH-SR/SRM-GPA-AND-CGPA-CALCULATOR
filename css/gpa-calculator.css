@@ -282,3 +282,21 @@ h3,h2{
         width: 100%;
     }
 }
+
+label{
+  text-align: center;
+  font-style: italic;
+}
+#result{
+  font-family: 'Times New Roman', Times, serif;
+  color: green;
+  font-weight: bold;
+  
+}
+#result>span{
+  font-size: 20px;
+  color: grey;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: None;
+  
+}

@@ -144,7 +144,7 @@ function addSemester() {
         const newInput = document.createElement("div");
         newInput.innerHTML = `
             <label for="semester${semesterCount}">Semester ${semesterCount} GPA:</label>
-            <input type="number" id="semester${semesterCount}" step="0.01" min="0" max="4.0" required>
+            <input type="number" id="semester${semesterCount}" step="0.01" min="0" max="10" required>
         `;
         semesterDiv.appendChild(newInput);
     }
@@ -169,6 +169,10 @@ function calculateCGPA() {
         if (isNaN(semesterGPA)) {
             alert(`Please enter a valid GPA for Semester ${i}`);
             return;  // Exit the function if invalid data is found.
+        }
+        else if(semesterGPA>10 || semesterGPA<0){
+            alert(`Please enter a value of range 0-10 for Semester ${i}`);
+            return;
         }
         const semesterCredits = regulations[selectedRegulation][selectedCourse][i];
         weightedGPA += semesterGPA * semesterCredits;
