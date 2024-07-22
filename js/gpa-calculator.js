@@ -387,6 +387,10 @@ let regulations = {
                     "credit": 1
                 },
                 {
+                    "subject": "Competitive Professional Skill",
+                    "credit": 1
+                },
+                {
                     "subject": "Employability Skills and Practices",
                     "credit": 1
                 }
